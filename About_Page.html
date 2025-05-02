@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+        .logo img {
+            width: 50px;
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .trending-games {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .trending-games article {
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 5px;
+        }
+        .awards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .image-award img {
+            max-width: 100%;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .trending-games article {
+                flex: 1 1 100%;
+            }
+            .awards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Pics/logo.jpg" alt="Rage Game Store Logo">
+            <h1><a href="index.html">Rage Game Store</a></h1>
+        </div>
+
+        <nav class="nav">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About_Page.html">About Us</a></li>
+                <li><a href="Upcoming_Games_Page.html">Upcoming Games</a></li>
+                <li><a href="Consoles_And_Peripherals_Page.html">Consoles & Gaming Peripherals</a></li>
+                <li><a href="Games_Page.html">Games</a></li>
+                <li><a href="Faq.html">Queries & FAQ</a></li>
+                <li><a href="Career.html">Career</a></li>
+                <li><a href="Order_Page.html">Order</a></li>
+                <li><a href="Order_Review_Page.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>About Us</h1>
+            <p>Welcome to The Rage Game Store! Here, we are passionate about providing the latest games and 
+               peripherals for all gaming enthusiasts. LET'S PLAY HARD!</p>
+            <h1>Our Mission</h1>
+            <p>At Rage Game Store, our mission is to provide gamers with the best selection of games at 
+               unbeatable prices. We are passionate about delivering a seamless shopping experience, ensuring 
+               every gamer finds their perfect match. Whether you're a casual player or a hardcore enthusiast, 
+               we aim to fuel your gaming passion with quality, affordability, and reliability.</p>
+        </section>
+
+        <section>
+            <h2>Our Branches</h2>
+            <div class="table">
+                <table>
+                    <!-- Table Title -->
+                    <tr>
+                        <th colspan="4" scope="colgroup">About Stores</th>
+                    </tr>
+            
+                    <!-- Location Row -->
+                    <tr>
+                        <th >Location</th>
+                        <td>
+                            Main Branch-Colombo 
+                            <a href="https://www.google.com/maps/@6.9377406,79.8511668,21z?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyNi4wIKXMDSoASAFQAw%3D%3D">
+                                <img src="Pics/Map/Map1.png" alt="Map of Main Store-Colombo">
+                            </a>
+                        </td>
+                        <td>
+                            Branch 2-Kandy 
+                            <a href="https://www.google.com/maps/place/7%C2%B017'35.4%22N+80%C2%B038'07.9%22E/@7.2931327,80.635504,21z/data=!4m13!1m8!3m7!1s0x3ae366266498acd3:0x411a3818a1e03c35!2sKandy!3b1!8m2!3d7.2905715!4d80.6337262!16zL20vMDFzZzRf!3m3!8m2!3d7.293155!4d80.635539">
+                                <img src="Pics/Map/Map2.png" alt="Map of Branch 2-Kandy">
+                            </a>
+                        </td>
+                        <td>
+                            Branch 3-Galle
+                            <a href="https://www.google.com/maps/place/Galle/@6.0337836,80.2125148,21z/data=!4m6!3m5!1s0x3ae173bb6932fce3:0x4a35b903f9c64c03!8m2!3d6.0328948!4d80.2167912!16zL20vMDI3M21r?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyNi4wIKXMDSoASAFQAw%3D%3D">
+                                <img src="Pics/Map/Map3.png" alt="Map of Branch 3-Galle">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>No. 30/1, Main Street, Colombo 01</td>
+                        <td>No.12, Bogambara Road, Kandy</td>
+                        <td>No.310, Market Road, Galle</td>
+                    </tr>
+                    <!-- Opening Hours Row -->
+                    <tr>
+                        <th >Opening Hours</th>
+                        <td>9:00 AM - 8:00 PM</td>
+                        <td>9:00 AM - 7:00 PM</td>
+                        <td>9:00 AM - 7:00 PM</td>
+                    </tr>
+            
+                    <!-- Contact Number Row -->
+                    <tr>
+                        <th>Contact Number</th>
+                        <td>+94 11 587 4571</td>
+                        <td>+94 45 587 4571</td>
+                        <td>+94 12 587 4571</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer class="section-p1">
+        <div class="col">
+           <img class="logo" src="logo2.jpg" alt=""> 
+           <h4>Contact</h4>
+           <p><strong>Address: </strong>No. 30/1, Main Street, Colombo 01</p>
+           <p><strong>Phone: </strong>+94 11 587 4571/ +94 76 999 7714</p>
+           <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+            </div>
+        </div>
+        
+  
+        
+     
+      
+            
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact us</a>
+            </div>
+            
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign in</a>
+                <a href="#">View cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">help</a>
+            </div>
+            
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="Pics/front end/img/pay/app.jpg"  alt=""> 
+                    <img src="Pics/front end/img/pay/play.jpg" alt="">
+                </div>
+                <p>Secure Payment Gateway</p>
+                <img src="Pics/front end/img/pay/pay.png" alt="">
+            </div>
+            
+            
+            
+            </div>
+            
+            
+        
+        </div>
+        
+        </footer>
+</body>
+</html>

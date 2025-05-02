@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Your Order</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/review_styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Pics/logo.jpg" alt="Rage Game Store Logo">
+      <h1><a href="Order_Page.html">Rage Game Store</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About_Page.html">About Us</a></li>
+        <li><a href="Upcoming_Games_Page.html">Upcoming Games</a></li>
+        <li><a href="Consoles_And_Peripherals_Page.html">Consoles</a></li>
+        <li><a href="Games_Page.html">Games</a></li>
+        <li><a href="Faq.html">Queries & FAQ</a></li>
+        <li><a href="Career.html">Career</a></li>
+        <li><a href="Order_Page.html">Order</a></li>
+        <li><a href="Order_Review_Page.html">Review</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="order-form">
+    <h2>Review & Checkout</h2>
+    <form id="reviewForm">
+      <h3>Personal Details</h3>
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+
+      <h3>Delivery Details</h3>
+      <input type="text" id="address" placeholder="Delivery Address" required>
+      <input type="text" id="city" placeholder="City" required>
+      <input type="text" id="postal" placeholder="Postal Code" required>
+
+      <h3>Payment Details</h3>
+      <input type="text" id="cardname" placeholder="Enter Card Holder Name" required>
+      <input type="text" id="cardnumber" placeholder="Enter Card Number" required>
+      <input type="month" id="exp" placeholder="Expiry Date" required>
+      <input type="text" id="cvv" placeholder="CVV" required>
+
+      <button type="button" id="payButton">Pay</button>
+    </form>
+    <div id="message"></div>
+  </div>
+
+  <script src="js/review_script.js"></script>
+</body>
+</html>

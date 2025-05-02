@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+ 
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #5c0ae0;
+            color: white;
+        }
+        .logo img {
+            width: 50px;
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .trending-games {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .trending-games article {
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 5px;
+        }
+        .awards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .image-award img {
+            max-width: 100%;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .trending-games article {
+                flex: 1 1 100%;
+            }
+            .awards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="Pics/logo.jpg" alt="Rage Game Store Logo">
+        <h1 ><a href="index.html">Rage Game Store</a></h1>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="About_Page.html">About Us</a></li>
+                <li><a href="Upcoming_Games_Page.html">Upcoming Games</a></li>
+                <li><a href="Consoles_And_Peripherals_Page.html">Consoles</a></li>
+                <li><a href="Games_Page.html">Games</a></li>
+                <li><a href="Faq.html">Queries & FAQ</a></li>
+                <li><a href="Career.html">Career</a></li>
+                <li><a href="Order_Page.html">Order</a></li>
+                <li><a href="Order_Review_Page.html">Review</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h1 id="hello" style="font-size:5vw">Welcome to Rage Game Store</h1>
+            <p></p>
+        </section>
+
+        <section>
+            <h2 style="font-size:3vw">Trending Games</h2>
+            <div class="trending games">
+                <article>
+                    <img src="Pics/img1.jpg" alt="Cyberpunk 2007" style="width: 200px; ">
+                    <h3>Cyberpunk 2077</h3>
+                    <p>Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.</p>
+                </article>
+                <article>
+                    <img src="Pics/GTA V.png" alt="GTA V" style="width: 200px;">
+                    <h3>Grand Theft Auto V</h3>
+                    <p>Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.</p>
+                </article>
+                <article>
+                    <img src="Pics/RDR2-Icon3.jpg" alt="RDR 2" style="width: 200px;">
+                    <h3>Red Dead Redemtion 2</h3>
+                    <p>Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="awards">
+            <div>
+                <h2 style="font-size:3vw">Awards & Recognition</h2>
+                <ol>
+                    <li>Best Online Game Store 2024</li>
+                    <li>Top-Rated Customer Satisfaction Award 2024</li>
+                    <li>Excellence in Gaming Deals & Discounts 2023</li>
+                </ol>
+            </div>
+    
+            <div class="image-award">
+                <img src="Pics/awards.jpg" alt="Award Image">
+            </div>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Wide variety of games and accessories</li>
+                <li>Competitive prices</li>
+                <li>Exclusive offers and discounts</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="section-p1">
+        <div class="col">
+           <img class="logo" src="logo2.jpg" alt=""> 
+           <h4>Contact</h4>
+           <p><strong>Address: </strong>No. 30/1, Main Street, Colombo 01</p>
+           <p><strong>Phone: </strong>+94 11 587 4571/ +94 76 999 7714</p>
+           <div class="follow">
+            <h4>Follow us</h4>
+            
+           </div>
+        </div>
+        
+  
+        
+     
+      
+            
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact us</a>
+            </div>
+            
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign in</a>
+                <a href="#">View cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">help</a>
+            </div>
+            
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="Pics/front end/img/pay/app.jpg"  alt=""> 
+                    <img src="Pics/front end/img/pay/play.jpg" alt="">
+                </div>
+                <p>Secure Payment Gateway</p>
+                <img src="Pics/front end/img/pay/pay.png" alt="">
+            </div>
+            
+            
+            
+            </div>
+            
+            
+        
+        </div>
+        
+        </footer>
+
+   
+</body>
+</html>

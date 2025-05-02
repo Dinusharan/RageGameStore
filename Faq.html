@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background: #333;
+        color: white;
+    }
+    .logo img {
+        width: 50px;
+    }
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    main {
+        padding: 20px;
+    }
+    .trending-games {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .trending-games article {
+        flex: 1 1 calc(33.333% - 20px);
+        padding: 10px;
+        background: #f4f4f4;
+        border-radius: 5px;
+    }
+    .awards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .image-award img {
+        max-width: 100%;
+    }
+    footer {
+        background: #222;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+        nav ul {
+            flex-direction: column;
+            padding: 10px;
+        }
+        .trending-games article {
+            flex: 1 1 100%;
+        }
+        .awards {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_Page.html">About Us</a></li>
+            <li><a href="Upcoming_Games_Page.html">Upcoming Games</a></li>
+            <li><a href="Consoles_And_Peripherals_Page.html">Consoles & Gaming Peripherals</a></li>
+            <li><a href="Games_Page.html">Games</a></li>
+            <li><a href="Faq.html">Queries & FAQ</a></li>
+            <li><a href="Career.html">Career</a></li>
+            <li><a href="Order_Page.html">Order</a></li>
+            <li><a href="Order_Review_Page.html">Order</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- FAQ Section -->
+
+    <!---->
+    <main>
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <h3>How can I create an account on your website?</h3>
+                    <p>You can create an account by clicking on the 'Sign Up' button and filling in your details. A confirmation email will be sent for verification.</p>
+                </div>
+        
+                <div class="faq">
+                    <h3>How do I check the status of my order?</h3>
+                    <p>Once your order is placed, you can check its status under the 'My Orders' section of your account.</p>
+                </div>
+        
+                <div class="faq">
+                    <h3>Can I cancel or modify my order after placing it?</h3>
+                    <p>Orders can be canceled or modified within 24 hours of placement. Contact our support team for assistance.</p>
+                </div>
+        
+                <div class="faq">
+                    <h3>Do you offer refunds or exchanges on games?</h3>
+                    <p>Yes, we offer refunds and exchanges under specific conditions. Please check our refund policy for more details.</p>
+                </div>
+        
+                <div class="faq">
+                    <h3>My game isn't working. What should I do?</h3>
+                    <p>First, check if your system meets the game's requirements. If the issue persists, visit our support page or contact customer service.</p>
+                </div>
+        
+                <div class="faq">
+                    <h3>How can I contact customer support for assistance?</h3>
+                    <p>You can reach us through our 'Contact Us' page or email us at support@ragegamestore.com.</p>
+                </div>
+                
+            <div class="submit-question">
+                <h3>Submit Your Question</h3>
+                <form>
+                    <label for="email">Your Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <label for="question">Your Question</label>
+                    <textarea id="question" placeholder="Type your question here" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+   <!---- <footer>
+        <p>&copy; 2024 Rage Game Studio</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#more">More</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#account">My Account</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <h4>Social Medias</h4>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+    </footer>
+
+    --->
+
+    <footer class="section-p1">
+        <div class="col">
+           <img class="logo" src="logo2.jpg" alt=""> 
+           <h4>Contact</h4>
+           <p><strong>Address: </strong>13/2, Mallwatha crosslane, Dehiwala</p>
+           <p><strong>Phone: </strong>+94 778139038 / +94 750718364</p>
+           <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+           </div>
+        </div>
+        
+  
+        
+     
+      
+            
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact us</a>
+            </div>
+            
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign in</a>
+                <a href="#">View cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">help</a>
+            </div>
+            
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="Pics/front end/img/pay/app.jpg"  alt=""> 
+                    <img src="Pics/front end/img/pay/play.jpg" alt="">
+                </div>
+                <p>Secure Payment Gateway</p>
+                <img src="Pics/front end/img/pay/pay.png" alt="">
+            </div>
+            
+            
+            
+            </div>
+            
+            
+        
+        </div>
+        
+        </footer>
+</body>
+</html>
+

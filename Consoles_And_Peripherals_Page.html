@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consoles & Peripherals - Game Store</title>
+    <link rel="stylesheet" href="css/style.css">
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+        .logo img {
+            width: 50px;
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .trending-games {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .trending-games article {
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 5px;
+        }
+        .awards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .image-award img {
+            max-width: 100%;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        /* Release date styling */
+        .price {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        /* Show the release date on hover */
+        .pro:hover .price {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .trending-games article {
+                flex: 1 1 100%;
+            }
+            .awards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About_Page.html">About Us</a></li>
+                <li><a href="Upcoming_Games_Page.html">Upcoming Games</a></li>
+                <li><a href="Consoles_And_Peripherals_Page.html">Consoles & Gaming Peripherals</a></li>
+                <li><a href="Games_Page.html">Games</a></li>
+                <li><a href="Faq.html">Queries & FAQ</a></li>
+                <li><a href="Career.html">Career</a></li>
+                <li><a href="Order_Page.html">Order</a></li>
+                <li><a href="Order_Review_Page.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product1" class="section-p1">
+            <h1>Consoles & Gaming Peripherals</h1>
+            <p>Discover the latest and most powerful gaming consoles designed to deliver an immersive gaming experience. Whether you're a fan of PlayStation, Xbox, or Nintendo, our collection features the best in cutting-edge technology, high-performance graphics, and exclusive titles. From next-gen 4K gaming to portable entertainment, find the perfect console to elevate your gaming journey.</p>
+       <div class="pro-container">
+            <div class="pro">
+            <h2>PS5 Controller</h2>
+                    <img src="Pics/console/console.jpg" alt="PS5 Controller">
+                    <div class="des">
+                    <p class="price">Price: LKR 22,000</p>
+                    </div>
+            </div>
+               
+            <div class="pro">
+                <h2>XBox Controller</h2>
+                <div class="product">
+                    <img src="Pics/console/console2.jpg" alt="Xbox Controller">
+                    <div class="des">
+                    <p class="price">Price: LKR 25,000</p>
+                </div>
+                </div>
+                
+                </div>
+                <div class="pro">
+                    <h2>Gaming Headsets</h2>
+                
+                    <img src="Pics/console/headset.jpg" alt="Gaming Headset">
+                    <div class="des">
+                    <p class="price">Price: LKR 20,000</p>
+                    </div>
+                </div>
+                
+                <div class="pro">
+                    <h2>Gaming Keyboards</h2>
+                
+                    <img src="Pics/console/keyboard.jpg" alt="Gaming Keyboard">
+                    <div class="des">
+                    <p class="price">Price: LKR 12,000</p>
+                    </div>
+                
+                </div>
+                <div class="pro">
+                    <h2>Gaming Mouse</h2>
+                
+                    <img src="Pics/console/mouse.jpg" alt="Gaming Mouse">
+                    <div class="des">
+                    <p class="price">Price: LKR 5,000</p>
+                    </div>
+                
+                </div>
+                <div class="pro">
+                    <h2>Mini Controller</h2>
+                
+                    <img src="Pics/console/controller.jpg" alt=" Mini Controller">
+                    <div class="des">
+                    <p class="price">Price: LKR 5,000</p>
+                    </div>
+                
+                </div>
+                <div class="pro">
+                    <h2>PS5 Full Set</h2>
+                    <img src="Pics/console/ps5.jpg" alt="PS5 Full Set">
+                    <div class="des">
+                    <p class="price">Price: LKR 160,000</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <h2>Finger Sleeves</h2>
+                
+                    <img src="Pics/console/glove.webp" alt="Finger Sleeves">
+                    <div class="des">
+                    <p class="price">Price: LKR 2,000</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+        </section>
+    </main>
+    <footer class="section-p1">
+        <div class="col">
+           <img class="logo" src="logo2.jpg" alt=""> 
+           <h4>Contact</h4>
+           <p><strong>Address: </strong>13/2, Mallwatha crosslane, Dehiwala</p>
+           <p><strong>Phone: </strong>+94 778139038 / +94 750718364</p>
+           <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+           </div>
+        </div>
+        
+  
+        
+     
+      
+            
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact us</a>
+            </div>
+            
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign in</a>
+                <a href="#">View cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">help</a>
+            </div>
+            
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="Pics/front end/img/pay/app.jpg"  alt=""> 
+                    <img src="Pics/front end/img/pay/play.jpg" alt="">
+                </div>
+                <p>Secure Payment Gateway</p>
+                <img src="Pics/front end/img/pay/pay.png" alt="">
+            </div>
+            
+            
+            
+            </div>
+            
+            
+        
+        </div>
+        
+        </footer>
+</body>
+</html>
